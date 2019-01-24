@@ -1,17 +1,15 @@
 <div class="login-box">
   <div class="top-box">
-    <p>
-      Chat App
-    </p>
-    <img src="./assets/img/logo.png" alt="">
+    <h1>Chat App</h1>
+    <img src="./assets/images/logo.jpg" alt="Logo">
   </div>
   <div class="middle-box">
     <form>
       <label for="username">Username</label>
-      <input type="text" name="username">
+      <input type="text" name="username" class="form-control" id="username">
       <label for="password">Password</label>
-      <input type="text" name="password">
-      <button>Login</button>
+      <input type="text" name="password" class="form-control" id="password">
+      <button (click)="onLogin()" class="btn btn-primary">Login</button>
     </form>
   </div>
   <div class="bottom-box"></div>
