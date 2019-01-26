@@ -1,6 +1,10 @@
 .login-box {
     display: flex;
     flex-direction: column;
+    width: 320px;
+    height: 500px;
+    padding: 5px;
+    box-shadow: 0 0 0 10px hsl(0, 0%, 80%), 0 0 0 15px hsl(0, 0%, 90%);
     .top-box {
         text-align: center;
         p {
@@ -21,5 +25,17 @@
                 margin: 10px 0;
             }
         }
+    }
+}
+
+@media (min-width: 992px) {
+    .login-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+    .login-box {
+        max-width: 100%;
     }
 }

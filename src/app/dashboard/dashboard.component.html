@@ -1,0 +1,29 @@
+<div class="dashboard-container">
+  <nav>
+    <!-- Links -->
+    <ul class="navbar">
+      <li class="nav-item">
+        <a [routerLink]="['profile']" class="nav-links">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['requests']" class="nav-links">Requests</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['chats']" class="nav-links">Chats</a>
+      </li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="navbar">
+      <li>
+        <a [routerLink]="['chats']">Back</a>
+      </li>
+      <li>
+        User 1
+      </li>
+    </ul>
+  </nav>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+</div>

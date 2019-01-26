@@ -1,0 +1,17 @@
+.profile {
+    .top-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 50%;
+            margin: auto;
+        }
+    }
+    .middle-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 0;
+    }
+}

@@ -9,6 +9,10 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'dashboard',
+    loadChildren: './dashboard/dashboard.module#DashboardModule'
+  },
+  {
     path: '',
     redirectTo: '/login',
     pathMatch: 'full'
