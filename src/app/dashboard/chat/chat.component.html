@@ -1,22 +1,19 @@
 <div class="chat">
   <ul class="list">
     <li class="list-items">
-      <div><img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 1 </div>
+      <div>
+        <a [routerLink]="['../message']" [queryParams]="{id: 45}">
+          <img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 1
+        </a>
+      </div>
     </li>
     <li class="list-items">
-      <div><img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 2</div>
+      <div>
+        <a [routerLink]="['../message']" [queryParams]="{id: 23}">
+          <img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 1
+        </a>
+      </div>
     </li>
-    <li class="list-items">
-      <div><img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 3</div>
-    </li>
-    <li class="list-items">
-      <div><img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 4</div>
-    </li>
-    <li class="list-items">
-      <div><img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 5</div>
-    </li>
-    <li class="list-items">
-      <div><img src="./assets/images/profile-default.png" alt="" class="rounded-circle">User 6</div>
-    </li>
+
   </ul>
 </div>

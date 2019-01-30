@@ -1,5 +1,5 @@
 <div class="dashboard-container">
-  <nav>
+  <nav *ngIf="showNav">
     <!-- Links -->
     <ul class="navbar">
       <li class="nav-item">
@@ -13,7 +13,7 @@
       </li>
     </ul>
   </nav>
-  <nav>
+  <nav *ngIf="!showNav">
     <ul class="navbar">
       <li>
         <a [routerLink]="['chats']">Back</a>

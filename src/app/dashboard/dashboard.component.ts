@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  showNav: boolean = true;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(
+    private router: Router
+  ) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (event.url.includes('/dashboard/message')) {
+          this.showNav = false;
+        } else {
+          this.showNav = true;
+        }
+      }
+    });
   }
+
+  ngOnInit() { }
 
 }

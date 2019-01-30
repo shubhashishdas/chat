@@ -16,7 +16,7 @@ const routes: Routes = [
         component: ProfileComponent
       },
       {
-        path: 'message/:id',
+        path: 'message',
         component: MessageComponent
       },
       {
